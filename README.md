@@ -7,8 +7,13 @@ In this workshop we will learn how to create a simple chatbot which supports Ret
   - Use `requirements_gpu.txt` if you have cuda installed
   - Otherwise, use `requirements_cpu.txt` for your environment
 - Download the pretrained models that we will be using during our workshop.
+  - _NOTE: If the install of the huggingface cli did not succeed when installing using the requirements\_*.txt files, then run this command to install the cli_:
+    - _On Windows: `powershell -ExecutionPolicy ByPass -c "irm https://hf.co/cli/install.ps1 | iex"`_
+    - _On Linux/Mac: `curl -LsSf https://hf.co/cli/install.sh | bash`_
+    - _Source: [Huggingface command-line-interface-cli](https://huggingface.co/docs/huggingface_hub/en/guides/cli#command-line-interface-cli)_
   - We will be using the model (Phi-3.5-mini-instruct)[https://huggingface.co/microsoft/Phi-3.5-mini-instruct] from microsoft which is under a MIT-license for our LLM
     - Use the huggingface cli to download it by running `hf download microsoft/Phi-3.5-mini-instruct` in the console
   - We will be using the embedding model (sentence-transformers/all-mpnet-base-v2)[https://huggingface.co/sentence-transformers/all-mpnet-base-v2] to create embeddings which we then store inside an in-memory vectorstore
     - Use the huggingface cli to download it by running `hf download sentence-transformers/all-mpnet-base-v2` in the console
+  
 - Now you are ready to join the workshop.
