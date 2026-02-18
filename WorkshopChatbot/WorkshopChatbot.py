@@ -1,7 +1,6 @@
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 from RAG.V1.RagV1 import RAGV1
-from RAG.rag import RAG
 
 model_name = "microsoft/Phi-3.5-mini-instruct"
 
